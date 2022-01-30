@@ -1,4 +1,4 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Param, Post } from '@nestjs/common';
 import { TransferService } from './transfer.service';
 import { Transfer } from './transfer.interface';
 
@@ -6,12 +6,12 @@ import { Transfer } from './transfer.interface';
 export class TransferController {
   constructor(private readonly transferService: TransferService) {}
 
-  @Get()
+  @Post()
   listUsers(): Transfer[] {
     return this.transferService.listTransfer();
   }
 
-  @Get(':id')
+  @Post(':id')
   getTest(@Param('id') id: string): Transfer {
     return this.transferService.getTransfer(id);
   }

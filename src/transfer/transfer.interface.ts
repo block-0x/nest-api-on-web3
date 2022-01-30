@@ -1,5 +1,7 @@
 export interface Transfer {
-  blockNumber: string;
+  blockNumber?: string;
   contractAddress?: string;
-  txHash: string;
+  from?: string;
+  to: string;
+  status?: string;
 }

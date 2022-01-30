@@ -13,8 +13,6 @@ You need to run a local or remote [Ethereum](https://www.ethereum.org/) node to 
 
 Please read the [documentation][docs] for more.
 
-## Installation
-
 ### Use Nest js
 
 <p align="center">

@@ -8,6 +8,9 @@ export class TransferController {
 
   @Post()
   async sendTransfer(@Body() transfer: Transfer) {
+    if (!transfer.to) {
+      return 'error: reqest body null';
+    }
     return await this.transferService.sendTransfer(transfer.to);
   }
 }

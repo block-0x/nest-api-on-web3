@@ -4,6 +4,6 @@ import { MintController } from './mint.controller';
 
 @Module({
   providers: [MintService],
-  controllers: [MintController]
+  controllers: [MintController],
 })
 export class MintModule {}

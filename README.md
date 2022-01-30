@@ -1,5 +1,3 @@
-## nest api on web3
-
 <p align="center">
   <img src="assets/logo/web3js.jpg" width="200" alt="web3.js" />
 </p>
@@ -15,6 +13,7 @@ You need to run a local or remote [Ethereum](https://www.ethereum.org/) node to 
 
 Please read the [documentation][docs] for more.
 
+## Installation
 
 ### Use Nest js
 

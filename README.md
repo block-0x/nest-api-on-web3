@@ -1,17 +1,8 @@
+### Use web3.js - Ethereum JavaScript API
+
 <p align="center">
   <img src="assets/logo/web3js.jpg" width="200" alt="web3.js" />
 </p>
-
-## web3.js - Ethereum JavaScript API
-
-[![Discord][discord-image]][discord-url] [![StackExchange][stackexchange-image]][stackexchange-url] [![NPM Package Version][npm-image-version]][npm-url] [![NPM Package Downloads][npm-image-downloads]][npm-url] [![Build Status][actions-image]][actions-url] [![Dev Dependency Status][deps-dev-image]][deps-dev-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Lerna][lerna-image]][lerna-url] [![Netlify Status][netlify-image]][netlify-url]
-
-This is the Ethereum [JavaScript API][docs]
-which connects to the [Generic JSON-RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC) spec.
-
-You need to run a local or remote [Ethereum](https://www.ethereum.org/) node to use this library.
-
-Please read the [documentation][docs] for more.
 
 ### Use Nest js
 

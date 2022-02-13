@@ -1,5 +1,13 @@
 version: '3'
 services:
+  hardhat:
+    build: .
+    volumes: 
+      - ./hardhat:/app
+      - /app/node_modules
+      - ./contracts:/app/tmp/contracts
+    ports:
+      - 8545:8545
   nest:
     build: .
     volumes:
@@ -8,3 +16,4 @@ services:
       - 3001:3000
     tty: true
     command: npm run start
+    

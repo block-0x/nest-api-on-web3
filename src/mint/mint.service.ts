@@ -1,6 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { Mint } from './mint.interface';
+
 @Injectable()
+
 export class MintService {
   private readonly mint: Mint = {
     blockNumber: '6433335',
@@ -9,7 +11,6 @@ export class MintService {
   };
 
   callMint(imageUrl: string): Mint {
-    console.log(imageUrl);
     return this.mint;
   }
 }

@@ -38,3 +38,12 @@ docker-compose up
 ```
 http://localhost:3000/
 ```
+
+```
+npx hardhat
+npx hardhat accounts
+npx hardhat compile
+npx hardhat run scripts/deploy.js
+npx hardhat node
+npx hardhat run scripts/deploy.js --network hardhat  
+```

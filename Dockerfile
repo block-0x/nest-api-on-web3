@@ -8,8 +8,9 @@ COPY package*.json ./
 
 RUN npm i && \
     npm install -g npm && \
+    npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers && \
+    npm install @openzeppelin/contracts && \
+    npm install -g solc && \
     npm install -g @nestjs/cli
 
 COPY . .
-ENV HOST 0.0.0.0
-EXPOSE 3000

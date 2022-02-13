@@ -1,4 +1,4 @@
-FROM node:12.19.0-alpine3.9 AS development
+FROM node:14.19.0 AS development
 
 RUN mkdir -p /nest
 ADD . /nest
@@ -6,11 +6,10 @@ WORKDIR /nest
 
 COPY package*.json ./
 
-RUN apk update && \
+RUN npm i && \
     npm install -g npm && \
     npm install -g @nestjs/cli
 
 COPY . .
-RUN npm run build
 ENV HOST 0.0.0.0
 EXPOSE 3000

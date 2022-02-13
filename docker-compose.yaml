@@ -5,6 +5,6 @@ services:
     volumes:
       - .:/nest
     ports:
-      - 3000:3000
+      - 3001:3000
     tty: true
-    command: npm run start:dev
+    command: npm run start

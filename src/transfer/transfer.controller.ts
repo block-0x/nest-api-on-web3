@@ -1,4 +1,4 @@
-import { Controller, Post, Body } from '@nestjs/common';
+import { Controller, Get, Body } from '@nestjs/common';
 import { TransferService } from './transfer.service';
 import { Transfer } from './transfer.interface';
 
@@ -6,7 +6,7 @@ import { Transfer } from './transfer.interface';
 export class TransferController {
   constructor(private readonly transferService: TransferService) {}
 
-  @Post()
+  @Get()
   async sendTransfer(@Body() transfer: Transfer) {
     if (!transfer.to) {
       return 'error: reqest body null';
